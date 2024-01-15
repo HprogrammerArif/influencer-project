@@ -57,9 +57,11 @@ nav a, i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left:100px;
+  margin-right:100px;
 }
 .influencer-content {
-  width: 50%;
+  /* max-width: 50%; */
 }
 .influencer-heading {
   color: var(--primary-color);
@@ -77,4 +79,51 @@ nav a, i {
 .btn-icon {
   color: #FFF;
   margin-left: 10px;
+}
+.influencer-camra-section {
+  background-image: url(resorces/images/Circle\ design.svg);
+  padding: 40px;
+  background-repeat: no-repeat;
+}
+/* BRAND LOGO SECTION STYLE */
+
+.brand-logo-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 80px 100px;
+}
+.brand-logo-section img {
+  margin-right: 30px;
+}
+
+
+
+
+/* SMALL DEVICE MEDIA QUARIES */
+@media screen and (max-width:576px) {
+  nav,
+  .influencer-section
+   {
+    flex-direction: column;
+  }
+
+  .influencer-camra-section {
+    max-width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+  }
+  .influencer-camra-section img {
+    object-fit: cover;
+    width: 250px;
+  }
+  .brand-logo-section {
+   margin: 50px;
+  }
+  .brand-logo-section img{
+    width: 60%;
+    padding-bottom: 30px;
+   }
 }
